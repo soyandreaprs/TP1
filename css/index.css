@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* INDEX CSS */
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libertinus Sans', Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #A01F26;
+    padding: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 10pt;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 15pt;
+    color: #A01F26;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 10pt;
+    color: #000000;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 10pt;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+ul li {
+    font-size: 10pt;
+    list-style: square;
+}
+
+nav a {
+    list-style: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 10pt;
+    line-height: 1.5;
+    padding: 20px;
+
+    &:hover {
+        color: #D784A1;
+    }
+}
+
+section {
+    padding: 5%;
+}
+
+aside img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* FIN DE ESTILOS GENERALES */
+
+/* COMPONENTES */
+/* Presentación: sección About y sección Statement"*/
+
+.info-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+}
+
+.info-text {
+    width: 50%;
+}
+
+.info-image {
+    width: 50%;
+}
+
+.bio-image {
+    width: 80%;
+}
+
+/* Fin de Presentación */
+/* FIN DE COMPONENTES */
+
+/* SECCIÓN ABOUT PÁGINA INDEX */
+
+.about {
+    background-color: #FFFFFF;
+}
+
+.about a {
+    color: #A01F26;
+    text-decoration: none;
+
+    &:hover {
+        color: #B38E48;
+    }
+}
+
+.signature-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+    &:hover {
+        translate: 50%;
+        transition: 3s;
+    }
+}
+.signature {
+    width: 100px;
+}
+
+/* FIN DE SECCIÓN ABOUT PÁGINA INDEX */
+
+/* SECCIÓN SHOP PÁGINA INDEX */
+
+.shop {
+    display: flex;
+    flex-flow: column;
+    background-color: #eeeded;
+}
+
+.shop-info-container a {
+    color: #A01F26;
+    text-decoration: none;
+
+    &:hover {
+        color: #B38E48;
+    }
+}
+
+/* FIN DE SECCIÓN SHOP PÁGINA INDEX */
+
+/* PÁGINA SHOP */
+
+.shop-cards {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.card {
+    width: 25%;
+}
+
+.shop-image {
+    aspect-ratio: 4/5;
+    width: 25%;
+}
+
+.btn-primary {
+    background-color: #A01F26;
+    border: none;
+
+    &.btn-primary:hover {
+        background-color: #B38E48
+    }
+
+    &.btn-primary p {
+        line-height: 1;
+        margin-bottom: 0;
+    }
+}
+
+/* FIN DE PÁGINA SHOP */
+
+/* SECCIÓN CONTACT PÁGINA INDEX */
+.contact {
+    background-color: #FFFFFF;
+}
+
+/* FIN DE CONTACT PÁGINA INDEX */
+
+.contact a {
+    color: #A01F26;
+    text-decoration: none;
+
+    &:hover {
+        color: #B38E48;
+    }
+}
+
+/* PÁGINA CONTACT */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    color: #A01F26;
+    font-size: 10pt;
+    line-height: 1.5;
+    border: #A01F26 solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #eeeded;
+}
+
+form input,
+form textarea {
+    background-color: #FFFFFF;
+    border: #A01F26 solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+button {
+    background-color: #A01F26;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B38E48;
+}
+
+/* FIN DE PÁGINA CONTACT */
+
+/* SECCIÓN FOOTER */
+
+footer {
+    background-color: #A01F26;
+    padding: 2.5%;
+    font-size: 10pt;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #FFFFFF;
+
+    &:hover {
+        color: #D784A1;
+    }
+}
+
+.instagram-logo {
+    width: 16px;
+    height: 16px;
+}
+
+/* FIN DE SECCIÓN FOOTER */
+
+@media (max-width: 425px) {
+/* ESTILOS GENERALES */
+h1 {
+    display: none;
+}
+nav a {
+    padding: 10px;
+}
+h2 {
+    text-align: center;
+}
+/* SECCIÓN ABOUT PÁGINA INDEX */
+.signature-container {
+    justify-content: center;
+    &:hover {
+        translate: 0;
+        transition: 0;
+    }
+}
+/* FIN SECCIÓN ABOUT PÁGINA INDEX */
+/* COMPONENTES */
+/* Presentación: sección About y sección Statement"*/
+.info-container {
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.info-text {
+    width: 100%;
+}
+.info-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* Fin de Presentación */
+/* FIN DE COMPONENTES */
+/* PÁGINA SHOP */
+.shop-cards {
+    flex-flow: column;
+    justify-content: center;
+    gap: 10px;
+}
+.card {
+    width: 100%;
+}
+/* FIN DE PÁGINA SHOP */
+    }
