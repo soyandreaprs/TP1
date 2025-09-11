@@ -113,19 +113,6 @@ aside img {
     }
 }
 
-.signature-container {
-    display: flex;
-    flex-flow: row;
-    justify-content: left;
-    &:hover {
-        translate: 50%;
-        transition: 3s;
-    }
-}
-.signature {
-    width: 100px;
-}
-
 /* FIN DE SECCIÓN ABOUT PÁGINA INDEX */
 
 /* SECCIÓN SHOP PÁGINA INDEX */
