@@ -139,6 +139,36 @@ section {
     }
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    max-width: 100%;
+}
+
+.main-artwork {
+    width: 100%;
+    height: auto;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+}
+
+.thumbnails img {
+    max-width: 50%;
+    cursor: pointer;
+    &:hover {
+        opacity: 20%;
+    }
+}
+
 /* FIN DE SECCIÓN SHOP PÁGINA INDEX */
 
 /* PÁGINA SHOP */
@@ -302,8 +332,15 @@ footer a {
         justify-content: center;
         width: 100%;
     }
-
     /* Fin de Presentación */
+    /* SECCIÓN SHOP PÁGINA INDEX */
+    .gallery {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    /*FIN DE SECCIÓN SHOP PÁGINA INDEX */
     /* FIN DE COMPONENTES */
     /* PÁGINA SHOP */
     .shop-cards {
