@@ -142,9 +142,8 @@ section {
 .gallery {
     display: flex;
     flex-wrap: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     gap: 20px;
-    justify-content: center;
 }
 
 .gallery-item {
@@ -163,7 +162,7 @@ section {
 
 .thumbnails img {
     max-width: 50%;
-    cursor: pointer;
+    border: solid white 5pt;
     &:hover {
         opacity: 20%;
     }
