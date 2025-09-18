@@ -163,6 +163,7 @@ section {
 .thumbnails img {
     max-width: 50%;
     border: solid white 5pt;
+    cursor: pointer;
     &:hover {
         opacity: 20%;
     }
