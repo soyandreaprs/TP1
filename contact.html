@@ -24,7 +24,8 @@
         <section class="banner">
             <img src="./images/banner4.jpg" alt="Artwork by Lidia Prause">
         </section>
-        <section id="contact" class="contact">
+    <section class="contact">
+        <section class="form">
             <h2 class="contact-title">Contact</h2>
             <form class="contact-form">
                 <label for="nombre">Name:</label>
@@ -36,6 +37,16 @@
                 <button type="submit" aria-label="Send contact form">Submit</button>
             </form>
         </section>
+        <section class="connect">
+            <h2 class="connect-title">Connect</h2>
+            <form class="connect-list">
+                <input id="new" type="text" maxlength="50" placeholder="Add to list">
+                <button id="addBtn">Add</button>
+                <ul id="list"></ul>
+            </form>
+        </section>
+        </section>
+    </section>
     </main>
     <footer>
         <p> © Lidia Prause. All rights reserved.</p>
@@ -47,6 +58,7 @@
             </svg>
         </a>
     </footer>
+    <script src="./contact.js"></script>
 </body>
 
 </html>

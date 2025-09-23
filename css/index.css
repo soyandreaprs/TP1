@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-
-/* INDEX CSS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');/* INDEX CSS */
 /* ESTILOS GENERALES */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Libertinus Sans', Arial, Helvetica, sans-serif;
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -107,11 +105,11 @@ section {
 
 /* SECCIÓN ABOUT PÁGINA INDEX */
 
-.about {
+.about-section {
     background-color: #FFFFFF;
 }
 
-.about a {
+.about-section a {
     color: #A01F26;
     text-decoration: none;
 
@@ -124,7 +122,7 @@ section {
 
 /* SECCIÓN SHOP PÁGINA INDEX */
 
-.shop {
+.shop-section {
     display: flex;
     flex-flow: column;
     background-color: #eeeded;
@@ -142,7 +140,6 @@ section {
 .gallery {
     display: flex;
     flex-wrap: row;
-    /* justify-content: space-around; */
     gap: 20px;
 }
 
@@ -163,6 +160,7 @@ section {
 .thumbnails img {
     max-width: 50%;
     border: solid white 5pt;
+
     &:hover {
         cursor: pointer;
         opacity: 20%;
@@ -206,13 +204,13 @@ section {
 /* FIN DE PÁGINA SHOP */
 
 /* SECCIÓN CONTACT PÁGINA INDEX */
-.contact {
+.contact-section {
     background-color: #FFFFFF;
 }
 
 /* FIN DE CONTACT PÁGINA INDEX */
 
-.contact a {
+.contact-section a {
     color: #A01F26;
     text-decoration: none;
 
@@ -223,7 +221,18 @@ section {
 
 /* PÁGINA CONTACT */
 
-.contact-form {
+.contact {
+    display: flex;
+    flex-flow: row;
+}
+
+.form,
+.connect {
+    width: 50%;
+}
+
+.contact-form,
+.connect-list {
     display: flex;
     flex-direction: column;
     color: #A01F26;
@@ -249,12 +258,17 @@ button {
     color: #FFFFFF;
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    /* /* padding: 5px; */
+    margin: 10px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #B38E48;
+}
+
+.connect-list ul li {
+    list-style: circle;
 }
 
 /* FIN DE PÁGINA CONTACT */
@@ -301,9 +315,9 @@ footer a {
     }
 
     .info-container {
-    display: flex;
-    flex-flow: column;
-}
+        display: flex;
+        flex-flow: column;
+    }
 
     /* SECCIÓN ABOUT PÁGINA INDEX */
     .signature-container {
@@ -332,6 +346,7 @@ footer a {
         justify-content: center;
         width: 100%;
     }
+
     /* Fin de Presentación */
     /* SECCIÓN SHOP PÁGINA INDEX */
     .gallery {
@@ -354,4 +369,18 @@ footer a {
     }
 
     /* FIN DE PÁGINA SHOP */
+
+    /* PÁGINA CONTACT */
+    .contact {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .form,
+    .connect {
+        width: 100%;
+    }
+
+    /* FIN DE PÁGINA CONTACT */
 }
