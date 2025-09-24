@@ -44,7 +44,7 @@ button.addEventListener("click", (e) => {
         li.appendChild(btnDelete)
 
         const btnCompleted = document.createElement("button")
-        btnCompleted.textContent = "Completd"
+        btnCompleted.textContent = "Completed"
         btnCompleted.addEventListener("click", (e) => {
             e.preventDefault();
             li.style.color = "green"
