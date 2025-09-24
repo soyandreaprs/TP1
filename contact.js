@@ -15,12 +15,12 @@ ourList.forEach(suggested => {
     li.textContent = suggested.task
 
     const btnDelete = document.createElement("button")
-    btnDelete.textContent = "☒"
+    btnDelete.textContent = "Delete"
     btnDelete.addEventListener("click", () => li.remove())
     li.appendChild(btnDelete)
 
     const btnCompleted = document.createElement("button")
-    btnCompleted.textContent = "☑"
+    btnCompleted.textContent = "Completed"
     btnCompleted.addEventListener("click", (e) => {
         e.preventDefault();
         li.style.color = "green"
@@ -39,12 +39,12 @@ button.addEventListener("click", (e) => {
         li.textContent = text
 
         const btnDelete = document.createElement("button")
-        btnDelete.textContent = "☒"
+        btnDelete.textContent = "Delete"
         btnDelete.addEventListener("click", () => li.remove())
         li.appendChild(btnDelete)
 
         const btnCompleted = document.createElement("button")
-        btnCompleted.textContent = "☑"
+        btnCompleted.textContent = "Completd"
         btnCompleted.addEventListener("click", (e) => {
             e.preventDefault();
             li.style.color = "green"

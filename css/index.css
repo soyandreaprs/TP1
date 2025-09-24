@@ -257,9 +257,9 @@ button {
     background-color: #A01F26;
     color: #FFFFFF;
     border: none;
-    border-radius: 5px;
-    /* /* padding: 5px; */
+    border-radius: 10px;
     margin: 10px;
+    padding: 5px;
     cursor: pointer;
 }
 
@@ -269,6 +269,12 @@ button:hover {
 
 .connect-list ul li {
     list-style: circle;
+    color: #000000;
+}
+
+.connect-list ul li button {
+    display: flex;
+    font-size: 8pt;
 }
 
 /* FIN DE PÁGINA CONTACT */
